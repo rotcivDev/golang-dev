@@ -11,20 +11,20 @@ This repository provides a Dockerized development environment for Go, including 
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone git@github.com:rotcivDev/golang-dev.git
+    git clone https://github.com/rotcivDev/golang-dev.git &&
     cd golang-dev
     ```
 
 2. Build the Docker image:
 
     ```bash
-    docker-compose build
+    docker compose build
     ```
 
 3. Run the Docker container:
 
     ```bash
-    docker-compose run golang-dev
+    docker compose run golang-dev
     ```
 
     This command will drop you into a Bash shell inside the container.
