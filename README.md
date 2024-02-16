@@ -1,6 +1,6 @@
-# Go Development Environment with Docker
+#[Go Tutorial: Create a Go module] (https://go.dev/doc/tutorial/create-module)
 
-This repository provides a Dockerized development environment for Go, including the official Go image, Vim, and Bash. It's a convenient way to set up a consistent and isolated development environment for your Go projects.
+This repository provides a Dockerized environment for Go tutorial practice
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ This repository provides a Dockerized development environment for Go, including 
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/rotcivDev/golang-dev.git &&
+    git clone -b tutorial/create-module https://github.com/rotcivDev/golang-dev.git &&
     cd golang-dev
     ```
 
@@ -27,17 +27,7 @@ This repository provides a Dockerized development environment for Go, including 
     docker compose run golang-dev
     ```
 
-    This command will drop you into a Bash shell inside the container.
-
-## Development
-
-- Your local project directory is mounted into the `/go/src/app` directory inside the container. Any changes made locally will be reflected inside the container, allowing for seamless development.
-
-- Use Vim for editing your Go code, and run your Go commands directly in the container.
-
-## Customization
-
-If you need additional tools or specific configurations, feel free to modify the Dockerfile and docker-compose.yml according to your requirements.
+    This command will run the app create in the tutorial, including the test
 
 ## License
 
