@@ -1,4 +1,4 @@
-# [Go Tutorial: Create a Go module] (https://go.dev/doc/tutorial/create-module)
+# [Go Tutorial: Create a Go module](https://go.dev/doc/tutorial/create-module)
 
 This repository provides a Dockerized environment for Go tutorial practice
 
