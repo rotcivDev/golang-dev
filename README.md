@@ -1,4 +1,4 @@
-#[Go Tutorial: Create a Go module] (https://go.dev/doc/tutorial/create-module)
+# [Go Tutorial: Create a Go module] (https://go.dev/doc/tutorial/create-module)
 
 This repository provides a Dockerized environment for Go tutorial practice
 
@@ -21,13 +21,15 @@ This repository provides a Dockerized environment for Go tutorial practice
     docker compose build
     ```
 
+    This command will test and build the application, putting the binary into the user local bin folder.
+
 3. Run the Docker container:
 
     ```bash
     docker compose run golang-dev
     ```
 
-    This command will run the app create in the tutorial, including the test
+    This command will run the tutorial app
 
 ## License
 
