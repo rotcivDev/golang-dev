@@ -1,10 +1,16 @@
-FROM golang:latest
+FROM golang:1.22 AS build-stage
 
-RUN apt-get update && \
-    apt-get install -y vim
-#    rm -rf /var/lib/apt/lists/*
+WORKDIR /usr/src/app
+
+COPY ./. ./
+
+WORKDIR /usr/src/app/greetings
+
+RUN go test -v
 
 WORKDIR /usr/src/app/hello
 
-CMD ["go", "run", "."]
+RUN GOOS=linux go build -v -o /usr/local/bin/hello -buildvcs=false
+
+CMD ["hello"]
 
