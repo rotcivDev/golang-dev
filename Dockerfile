@@ -8,5 +8,5 @@ COPY ./config/vimrc /etc/vim/vimrc
 
 WORKDIR /usr/src/app
 
-CMD ["bash"]
+CMD ["go", "run", "./hello"]
 

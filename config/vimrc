@@ -1,0 +1,8 @@
+source $VIMRUNTIME/defaults.vim
+set number
+set incsearch
+packadd! editorconfig
+packadd! matchit
+set listchars=tab:>-,trail:-
+filetype plugin on
+:syntax enable
