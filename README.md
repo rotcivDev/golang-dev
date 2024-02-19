@@ -1,6 +1,6 @@
-# Go Development Environment with Docker
+# [Go Development Environment with Docker](https://go.dev/doc/tutorial/database-access)
 
-This repository provides a Dockerized development environment for Go, including the official Go image, Vim, and Bash. It's a convenient way to set up a consistent and isolated development environment for your Go projects.
+This tutorial introduces the basics of accessing a relational database with Go and the database/sql package in its standard library.
 
 ## Prerequisites
 
