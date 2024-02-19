@@ -1,4 +1,4 @@
-# [Go Development Environment with Docker](https://go.dev/doc/tutorial/database-access)
+# [Tutorial: Accessing a relational database](https://go.dev/doc/tutorial/database-access)
 
 This tutorial introduces the basics of accessing a relational database with Go and the database/sql package in its standard library.
 
