@@ -8,3 +8,19 @@ services:
     volumes:
       - .:/usr/src/app
     tty: true
+    depends_on:
+      - db
+    command: sh -c "sleep 10 && ./database/init-script.sh && bash"
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./init-script.sh:/app/init-script.sh

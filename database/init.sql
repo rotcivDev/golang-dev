@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS recordings;
+USE recordings;
 DROP TABLE IF EXISTS album;
 CREATE TABLE album (
   id         INT AUTO_INCREMENT NOT NULL,
